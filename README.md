@@ -3,3 +3,5 @@
 new update
 
 Welcome to artifactory built
+
+save artifact
