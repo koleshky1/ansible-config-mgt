@@ -4,4 +4,4 @@ new update
 
 Welcome to artifactory built
 
-save artifact
+save artifact build
