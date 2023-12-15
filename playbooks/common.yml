@@ -3,6 +3,10 @@
   hosts: webservers, nfs, db
   become: yes
   tasks:
+    - name: Update yum repo
+      yum: 
+        update_cache: yes
+
     - name: ensure wireshark is at the latest version
       yum:
         name: wireshark
