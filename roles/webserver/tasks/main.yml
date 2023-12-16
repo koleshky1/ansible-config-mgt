@@ -3,7 +3,7 @@
 ---
 - name: install apache
   become: true
-  ansible.builtin.yum:
+  ansible.builtin.yum
     name: "httpd"
     state: present
 
