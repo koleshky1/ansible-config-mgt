@@ -1,9 +1,4 @@
 ---
-<<<<<<< HEAD
-# tasks file for webserver
----
-=======
->>>>>>> 73e7aaa9b928d335266db517891f6d7b22b15ca3
 - name: install apache
   become: true
   ansible.builtin.yum:
