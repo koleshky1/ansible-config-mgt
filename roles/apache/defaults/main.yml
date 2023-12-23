@@ -59,3 +59,11 @@ apache_restart_state: restarted
 # Apache package state; use `present` to make sure it's installed, or `latest`
 # if you want to upgrade or switch versions using a new repo.
 apache_packages_state: present
+
+# webservers
+loadbalancer_name: "myappl"
+ip-172-31-85-153.ec2.internal: "172-31-85-153 weight=3"
+ip-172-31-94-194.ec2.internal: "172-31-94-194 weight=3"
+
+enable_apache_lb: false
+load_balancer_is_required: false
