@@ -83,8 +83,8 @@ nginx_upstreams: []
   strategy: "ip_hash" # "least_conn", etc.
   keepalive: 16 # optional
   servers:
-    - http://172.31.85.153:8080 weight=3"
-    - http://172.31.94.194:8080 weight=3"
+    - http://172.31.89.70:8080 weight=3"
+    - http://172.31.93.77:8080 weight=3"
 #     - "srv3.example.com"
 
 nginx_log_format: |-
