@@ -21,7 +21,8 @@ apache_vhosts:
   # 'serveradmin, serveralias, allow_override, options, extra_parameters'.
   - servername: "local.dev"
     documentroot: "/var/www/html"
-
+    loadbalancer_name: "myappl"
+    
 apache_allow_override: "All"
 apache_options: "-Indexes +FollowSymLinks"
 
@@ -60,10 +61,10 @@ apache_restart_state: restarted
 # if you want to upgrade or switch versions using a new repo.
 apache_packages_state: present
 
-# webserversgit a
+# webservers
 loadbalancer_name: "myappl"
-ip-172.31.89.70.ec2.internal: "172.31.89.70 weight=3"
-ip-172.31.93.77.ec2.internal: "172.31.93.77 weight=3"
+web 01: "ip web server1 weight=3"
+web 02: "ip wep server2 weight=3"
 
 enable_apache_lb: false
 load_balancer_is_required: false
