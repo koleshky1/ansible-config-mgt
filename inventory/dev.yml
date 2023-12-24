@@ -11,13 +11,3 @@
 #[lb]
 #172.31.24.151 ansible_user=ubuntu
 
- [db] 
-172.31.89.145  ansible_user=ubuntu
-
- [lb]
-172.31.95.166 ansible_user=ubuntu
-172.31.82.133 ansible_user=ubuntu
-
- [webservers]
- 172.31.93.77 ansible_user=ec2-user
- 172.31.89.70 ansible_user=ec2-user

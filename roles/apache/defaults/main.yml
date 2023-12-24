@@ -63,8 +63,9 @@ apache_packages_state: present
 
 # webservers
 loadbalancer_name: "myappl"
-web 01: "ip web server1 weight=3"
-web 02: "ip wep server2 weight=3"
+"web01 weight=3"
+"web02  weight=3"
+"proxy_pass http://myappl"
 
 enable_apache_lb: false
 load_balancer_is_required: false
