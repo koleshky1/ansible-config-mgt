@@ -11,3 +11,20 @@
 #[lb]
 #172.31.24.151 ansible_user=ubuntu
 
+
+ web01 ansible_host=172.31.80.217 ansible_ssh_user='ec2-user' 
+ web02 ansible_host=172.31.86.58 ansible_ssh_user='ec2-user'
+ db ansible_host= 172.31.81.156 ansible_ssh_user='ubuntu'
+ nginx_lb ansible_host=172.31.85.227 ansible_ssh_user='ubuntu'
+ apache_lb ansible_host=172.31.91.245 ansible_ssh_user='ubuntu'
+ 
+  [lb]
+ nginx_lb
+ apache_lb
+ 
+[webservers]
+ web01
+ web02
+
+[dbserver]
+  db
