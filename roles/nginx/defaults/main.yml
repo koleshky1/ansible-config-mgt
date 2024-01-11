@@ -80,9 +80,9 @@ nginx_vhosts: []
 
 nginx_upstreams: []
  - name: myapp1
-  strategy: "ip_hash" # "least_conn", etc.
-  keepalive: 16 # optional
-  servers:
+   strategy: "ip_hash" # "least_conn", etc.
+   keepalive: 16 # optional
+   servers:
     - "web01 weight=3"
     - "web02 weight=3
     
