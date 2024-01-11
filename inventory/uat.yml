@@ -1,3 +1,8 @@
 #[uat-webservers]
 #172.31.27.61 ansible_ssh_user='ec2-user' 
 #172.31.30.177 ansible_ssh_user='ec2-user'
+db01 ansible_host=172.31.30.170  ansible_ssh_user=ubuntu
+
+[db]
+db01
+
