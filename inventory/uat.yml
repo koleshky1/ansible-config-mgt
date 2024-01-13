@@ -13,7 +13,7 @@ apache ansible_host=172.31.91.134  ansible_ssh_user='ec2-user'
 #web01
 #web02
 [lb]
-nginx
+#nginx
 apache
 
 
