@@ -1,19 +1,19 @@
 #[uat-webservers]
 #172.31.27.61 ansible_ssh_user='ec2-user' 
 #172.31.30.177 ansible_ssh_user='ec2-user'
-db01 ansible_host=172.31.88.117  ansible_ssh_user=ubuntu
-web01 ansible_host=172.31.25.118 ansible_ssh_user='ec2-user'
-web02 ansible_host=172.31.86.232 ansible_ssh_user='ec2-user'
-#nginx ansible_host= 172.31.80.205  ansible_ssh_user='ec2-user'
+#db01 ansible_host=172.31.88.117  ansible_ssh_user=ubuntu
+#web01 ansible_host=172.31.25.118 ansible_ssh_user='ec2-user'
+#web02 ansible_host=172.31.86.232 ansible_ssh_user='ec2-user'
+nginx ansible_host= 172.31.80.205  ansible_ssh_user='ec2-user'
 #apache ansible_host=172.31.90.98  ansible_ssh_user='ec2-user'
 
-[db]
-db01
-[webservers]
-web01
-web02
-#[lb]
-#nginx
+#[db]
+#db01
+#[webservers]
+#web01
+#web02
+[lb]
+nginx
 #apache
 
 
