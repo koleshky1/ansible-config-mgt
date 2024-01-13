@@ -84,7 +84,7 @@ nginx_upstreams: []
    keepalive: 16 # optional
    servers:
     - "web01 weight=3"
-    - "web02 weight=3
+    - "web02 weight=3"
     
 
 nginx_log_format: |-
