@@ -1,4 +1,5 @@
 ---
+name: update web
 - hosts: webservers
   roles:
    webservers
