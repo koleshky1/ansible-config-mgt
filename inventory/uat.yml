@@ -9,11 +9,9 @@ apache ansible_host=172.31.83.174  ansible_ssh_user='ec2-user'
 
 [db]
 db01
-
 [webservers]
 web01
 web02
-
 [lb]
 nginx
 apache
