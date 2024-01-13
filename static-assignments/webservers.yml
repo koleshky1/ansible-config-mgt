@@ -2,8 +2,7 @@
 - hosts: webservers
   roles:
   - webservers
-
-
+  
 - name: install apache
   become: true
   ansible.builtin.yum:
