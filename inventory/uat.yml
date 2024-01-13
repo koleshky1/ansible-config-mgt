@@ -2,16 +2,16 @@
 #172.31.27.61 ansible_ssh_user='ec2-user' 
 #172.31.30.177 ansible_ssh_user='ec2-user'
 #db01 ansible_host=  ansible_ssh_user=ubuntu
-web01 ansible_host=172.31.91.134  ansible_ssh_user='ec2-user'
-#web02 ansible_host= ansible_ssh_user='ec2-user'
+#web01 ansible_host=  ansible_ssh_user='ec2-user'
+web02 ansible_host=172.31.91.134 ansible_ssh_user='ec2-user'
 #nginx ansible_host=   ansible_ssh_user='ec2-user'
 #apache ansible_host=  ansible_ssh_user='ec2-user'
 #[db]
 #db01
 
 #[webservers]
-web01
-#web02
+#web01
+web02
 #[lb]
 #nginx
 #apache
