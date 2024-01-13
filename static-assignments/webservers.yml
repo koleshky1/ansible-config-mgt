@@ -1,5 +1,5 @@
 ---
-- hosts: web01 , web02
+- host: webservers
   roles:
      - webserver
   become: yes
